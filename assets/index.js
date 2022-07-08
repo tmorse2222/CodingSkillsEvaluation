@@ -22,6 +22,11 @@ function q5() {
     document.getElementById(`q4`).style.display = `none`;
     document.getElementById(`q5`).style.display = `flex`;
 };
+function q6() {
+    document.getElementById(`q5`).style.display = `none`;
+    document.getElementById(`q6`).style.display = `flex`;
+};
+
 // Declared Functions
 
 document.getElementById(`startButton`).onclick = start;
@@ -45,3 +50,8 @@ document.getElementById(`c4`).onclick = q5;
 document.getElementById(`i41`).onclick = q5;
 document.getElementById(`i42`).onclick = q5;
 document.getElementById(`i43`).onclick = q5;
+
+document.getElementById(`c5`).onclick = q6;
+document.getElementById(`i51`).onclick = q6;
+document.getElementById(`i52`).onclick = q6;
+document.getElementById(`i53`).onclick = q6;
