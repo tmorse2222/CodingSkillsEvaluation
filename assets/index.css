@@ -46,20 +46,25 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: var(--scrnBrdr);
-    padding-top: 33%;
+    padding-top: 10%;
 }
 .qa ul {
     font-size: var(--questionSize);
 }
 .qa li {
     font-size: var(--fontSize);
-    padding-top: var(--questionSize);
-    padding-bottom: var(--scrnBrdr);
+    padding: var(--questionSize) var(--scrnBrdr) var(--scrnBrdr) var(--scrnBrdr);
     list-style: circle outside;
 }
+.qa li:hover {
+    border: .2rem dashed var(--mainBG);
+}
+.qa li:focus {
+    outline: none;
+    border: .2rem dashed var(--mainBG);
+}
 
-/* Style for Q1 */
-
+/* Style used to hide questions */
 #q1 {
     display: none;
 }
