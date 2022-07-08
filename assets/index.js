@@ -30,6 +30,10 @@ function q7() {
     document.getElementById(`q6`).style.display = `none`;
     document.getElementById(`q7`).style.display = `flex`;
 };
+function q8() {
+    document.getElementById(`q7`).style.display = `none`;
+    document.getElementById(`q8`).style.display = `flex`;
+};
 
 // Declared Functions
 
@@ -64,3 +68,8 @@ document.getElementById(`c6`).onclick = q7;
 document.getElementById(`i61`).onclick = q7;
 document.getElementById(`i62`).onclick = q7;
 document.getElementById(`i63`).onclick = q7;
+
+document.getElementById(`c7`).onclick = q8;
+document.getElementById(`i71`).onclick = q8;
+document.getElementById(`i72`).onclick = q8;
+document.getElementById(`i73`).onclick = q8;
