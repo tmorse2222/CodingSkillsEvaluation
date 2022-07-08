@@ -48,3 +48,12 @@ h1 {
     padding: var(--scrnBrdr);
     padding-top: 3rem;
 }
+.qa li {
+    font-size: var(--fontSize);
+}
+
+/* Style for Q1 */
+
+#q1 {
+    display: none;
+}
