@@ -5,6 +5,7 @@ font-size: 10px;
 --fontSize: 1.7rem;
 --mainBG: rgb(10, 170, 170);
 --questionSize: 2.5rem;
+--scrnBrdr: .5rem;
 }
 
 /* Styles for <header> */
@@ -19,8 +20,8 @@ header {
 h1 {
     font-size: 3.1rem;
     display: inline;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: var(--scrnBrdr);
+    padding-bottom: var(--scrnBrdr);
 }
 .head a {
     text-decoration: none;
@@ -39,6 +40,11 @@ h1 {
 
 /* Style for Start Button */
 
-#startButton {
+.qa {
     font-size: var(--questionSize);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--scrnBrdr);
+    padding-top: 3rem;
 }
