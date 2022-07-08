@@ -4,6 +4,7 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 10px;
 --fontSize: 1.7rem;
 --mainBG: rgb(10, 170, 170);
+--questionSize: 2.5rem;
 }
 
 /* Styles for <header> */
@@ -12,17 +13,19 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--mainBG);
+    align-items: center;
 }
 
 h1 {
     font-size: 3.1rem;
     display: inline;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 .head a {
     text-decoration: none;
     font-size: var(--fontSize);
     display: inline;
-    padding-top: 1.6rem;
     color: black;
 }
 .head p {
@@ -35,3 +38,7 @@ h1 {
 }
 
 /* Style for Start Button */
+
+#startButton {
+    font-size: var(--questionSize);
+}
