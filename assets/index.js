@@ -1,4 +1,9 @@
+// Global varriables
+var startButton = document.getElementById(`startButton`);
+// Created Functions
 function start() {
-    getElementById(`startContain`).style.display = "none";
-    getElementById(`q1`).style.display = "unset";
+    document.getElementById(`startContain`).style.display = "none";
+    document.getElementById(`q1`).style.display = "unset";
 };
+
+startButton.onclick = start;
