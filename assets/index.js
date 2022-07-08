@@ -1,9 +1,5 @@
 // Global varriables
 
-var startButton = document.getElementById(`startButton`);
-var correct2 = document.getElementById(`correct2`);
-var incorrect2 = document.getElementById(`incorrect2`);
-
 // Created Functions
 
 function start() {
@@ -22,10 +18,13 @@ function q4() {
     document.getElementById(`q3`).style.display = `none`;
     document.getElementById(`q4`).style.display = `flex`;
 };
-
+function q5() {
+    document.getElementById(`q4`).style.display = `none`;
+    document.getElementById(`q5`).style.display = `flex`;
+};
 // Declared Functions
 
-startButton.onclick = start;
+document.getElementById(`startButton`).onclick = start;
 
 document.getElementById(`c1`).onclick = q2;
 document.getElementById(`i11`).onclick = q2;
@@ -41,3 +40,8 @@ document.getElementById(`c3`).onclick = q4;
 document.getElementById(`i31`).onclick = q4;
 document.getElementById(`i32`).onclick = q4;
 document.getElementById(`i33`).onclick = q4;
+
+document.getElementById(`c4`).onclick = q5;
+document.getElementById(`i41`).onclick = q5;
+document.getElementById(`i42`).onclick = q5;
+document.getElementById(`i43`).onclick = q5;
