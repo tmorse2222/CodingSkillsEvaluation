@@ -52,14 +52,18 @@ h1 {
     font-size: var(--questionSize);
 }
 .qa li {
+    list-style: circle inside;
+}
+.qa li button{
+    background-color: white;
+    border: none;
     font-size: var(--fontSize);
     padding: var(--questionSize) var(--scrnBrdr) var(--scrnBrdr) var(--scrnBrdr);
-    list-style: circle outside;
 }
-.qa li:hover {
+.qa li button:hover {
     border: .2rem dashed var(--mainBG);
 }
-.qa li:focus {
+.qa li button:focus {
     outline: none;
     border: .2rem dashed var(--mainBG);
 }

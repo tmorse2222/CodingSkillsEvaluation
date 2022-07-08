@@ -1,8 +1,8 @@
 // Global varriables
 
 var startButton = document.getElementById(`startButton`);
-var correct = document.getElementById(`correct`);
-var incorrect = document.getElementById(`incorrect`);
+var correct = [document.getElementById(`correct`)];
+var incorrect = [document.getElementById(`incorrect`)];
 
 // Created Functions
 
@@ -18,4 +18,5 @@ function q2() {
 // Declared Functions
 
 startButton.onclick = start;
-correct.onclick = q2;
+correct[0].onclick = q2;
+incorrect[0].onclick = q2;
