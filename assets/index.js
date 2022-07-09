@@ -34,6 +34,10 @@ function q8() {
     document.getElementById(`q7`).style.display = `none`;
     document.getElementById(`q8`).style.display = `flex`;
 };
+function q9() {
+    document.getElementById(`q8`).style.display = `none`;
+    document.getElementById(`q9`).style.display = `flex`;
+};
 
 // Declared Functions
 
@@ -73,3 +77,8 @@ document.getElementById(`c7`).onclick = q8;
 document.getElementById(`i71`).onclick = q8;
 document.getElementById(`i72`).onclick = q8;
 document.getElementById(`i73`).onclick = q8;
+
+document.getElementById(`c8`).onclick = q9;
+document.getElementById(`i81`).onclick = q9;
+document.getElementById(`i82`).onclick = q9;
+document.getElementById(`i83`).onclick = q9;
