@@ -42,7 +42,10 @@ function q10() {
     document.getElementById(`q9`).style.display = `none`;
     document.getElementById(`q10`).style.display = `flex`;
 };
-
+function end() {
+    document.getElementById(`q10`).style.display = `none`;
+    document.getElementById(`startContain`).style.display = `flex`;
+};
 // Declared Functions
 
 document.getElementById(`startButton`).onclick = start;
@@ -91,3 +94,8 @@ document.getElementById(`c9`).onclick = q10;
 document.getElementById(`i91`).onclick = q10;
 document.getElementById(`i92`).onclick = q10;
 document.getElementById(`i93`).onclick = q10;
+
+document.getElementById(`c10`).onclick = end;
+document.getElementById(`i101`).onclick = end;
+document.getElementById(`i102`).onclick = end;
+document.getElementById(`i103`).onclick = end;
