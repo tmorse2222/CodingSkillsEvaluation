@@ -75,3 +75,11 @@ h1 {
 
 /* Style for score */
 
+.playerScore {
+    font-size: var(--questionSize);
+    background-color: var(--mainBG);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: var(--scrnBrdr);
+}
