@@ -83,3 +83,6 @@ h1 {
     bottom: 0;
     padding: var(--scrnBrdr);
 }
+#playerScore {
+    font-size: var(--questionSize);
+}

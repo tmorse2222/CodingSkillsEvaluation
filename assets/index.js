@@ -1,5 +1,5 @@
 // Global varriables
-
+var currentScore = document.getElementById(`playerScore`)
 // Created Functions
 
 function start() {
