@@ -2,6 +2,7 @@
 var currentScore = 0;
 // Created Functions
 
+// Start functions
 function startQuestion() {
     document.getElementById(`startContain`).style.display = `none`;
     document.getElementById(`q1`).style.display = `flex`;
@@ -13,11 +14,20 @@ function start() {
     startQuestion();
     startScore();
 }
-
+// Question functions
+function correct() {
+    currentScore =+ 5;
+    startScore();
+};
 function q2() {
     document.getElementById(`q1`).style.display = `none`;
     document.getElementById(`q2`).style.display = `flex`;
 };
+function q2C() {
+    q2();
+    correct();
+}
+
 function q3() {
     document.getElementById(`q2`).style.display = `none`;
     document.getElementById(`q3`).style.display = `flex`;
@@ -58,7 +68,7 @@ function end() {
 
 document.getElementById(`startButton`).onclick = start;
 
-document.getElementById(`c1`).onclick = q2;
+document.getElementById(`c1`).onclick = q2C;
 document.getElementById(`i11`).onclick = q2;
 document.getElementById(`i12`).onclick = q2;
 document.getElementById(`i13`).onclick = q2;
