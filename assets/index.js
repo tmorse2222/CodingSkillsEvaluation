@@ -2,13 +2,18 @@
 var currentScore = 0;
 // Created Functions
 
-function start() {
+function startQuestion() {
     document.getElementById(`startContain`).style.display = `none`;
     document.getElementById(`q1`).style.display = `flex`;
 };
 function startScore() {
     document.getElementById(`playerScore`).innerHTML = `Your Score: ${currentScore}`;
 };
+function start() {
+    startQuestion();
+    startScore();
+}
+
 function q2() {
     document.getElementById(`q1`).style.display = `none`;
     document.getElementById(`q2`).style.display = `flex`;
@@ -52,7 +57,6 @@ function end() {
 // Declared Functions
 
 document.getElementById(`startButton`).onclick = start;
-document.getElementById(`startButton`).onclick = startScore;
 
 document.getElementById(`c1`).onclick = q2;
 document.getElementById(`i11`).onclick = q2;
