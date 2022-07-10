@@ -16,7 +16,7 @@ function start() {
 }
 // Question functions
 function correct() {
-    currentScore =+ 5;
+    currentScore += 5;
     startScore();
 };
 function q2() {
@@ -26,16 +26,20 @@ function q2() {
 function q2C() {
     q2();
     correct();
-}
-
+};
 function q3() {
     document.getElementById(`q2`).style.display = `none`;
     document.getElementById(`q3`).style.display = `flex`;
+};
+function q3C() {
+    q3();
+    correct();
 };
 function q4() {
     document.getElementById(`q3`).style.display = `none`;
     document.getElementById(`q4`).style.display = `flex`;
 };
+
 function q5() {
     document.getElementById(`q4`).style.display = `none`;
     document.getElementById(`q5`).style.display = `flex`;
@@ -73,7 +77,7 @@ document.getElementById(`i11`).onclick = q2;
 document.getElementById(`i12`).onclick = q2;
 document.getElementById(`i13`).onclick = q2;
 
-document.getElementById(`c2`).onclick = q3;
+document.getElementById(`c2`).onclick = q3C;
 document.getElementById(`i21`).onclick = q3;
 document.getElementById(`i22`).onclick = q3;
 document.getElementById(`i23`).onclick = q3;
