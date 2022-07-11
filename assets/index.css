@@ -34,10 +34,6 @@ h1 {
     font-size: var(--fontSize);
     display: inline;
 }
-.head p span {
-    font-size: var(--fontSize);
-    display: inline;
-}
 
 /* Style for Start Button, Questions, and Answers */
 
@@ -51,6 +47,7 @@ h1 {
 }
 .qa ul {
     font-size: var(--questionSize);
+    padding-bottom: var(--questionSize);
 }
 .qa li {
     list-style: circle inside;
@@ -127,4 +124,12 @@ h1 {
 /* Style used to hide questions */
 #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #highScores, #correctAlert, #incorrectAlert {
     display: none;
+}
+#startContain {
+    flex-direction: column;
+}
+#startContain p {
+    font-size: var(--fontSize);
+    padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
+    text-align: center;
 }

@@ -47,6 +47,7 @@ function incorrect() {
     document.getElementById(`correctAlert`).style.display = `none`;
 }
 function timesUp() {
+    time = 0;
     q2();
     q3();
     q4();
@@ -167,6 +168,8 @@ function q10I() {
     incorrect();
 };
 function end() {
+    document.getElementById(`correctAlert`).style.display = `none`;
+    document.getElementById(`incorrectAlert`).style.display = `none`;
     clearInterval(timer);
     currentScore += time;
     var name = prompt(`Please enter your name:`);
@@ -176,8 +179,8 @@ function end() {
     document.getElementById(`q10`).style.display = `none`;
     document.getElementById(`startContain`).style.display = `flex`;
     scoreButton();
-    document.getElementById(correctAlert).style.display = `none`;
-    document.getElementById(incorrectAlert).style.display = `none`;
+    startScore();
+    document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
 };
 function endC() {
     correct();
