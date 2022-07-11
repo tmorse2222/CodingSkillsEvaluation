@@ -102,9 +102,10 @@ function end() {
     var name = prompt(`Please enter your name:`);
     var list = document.createElement(`li`);
     list.innerHTML = `${name} - ${currentScore}`;
-    document.getElementById(`highScores`).appendChild(list);
+    document.getElementById(`playerList`).appendChild(list);
     document.getElementById(`q10`).style.display = `none`;
     document.getElementById(`startContain`).style.display = `flex`;
+    scoreButton();
 };
 function endC() {
     correct();
