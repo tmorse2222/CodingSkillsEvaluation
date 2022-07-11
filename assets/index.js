@@ -43,6 +43,9 @@ function correct() {
 };
 function incorrect() {
     time -= 10;
+    if (time < 0) {
+        time = 0;
+    };
     document.getElementById(`incorrectAlert`).style.display = `flex`;
     document.getElementById(`correctAlert`).style.display = `none`;
 }
