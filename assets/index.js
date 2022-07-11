@@ -19,6 +19,7 @@ function startScore() {
     document.getElementById(`playerScore`).innerHTML = `Your Score: ${currentScore}`;
 };
 function timeStart() {
+    time = 60;
     var timer = setInterval(function(){
         document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
         time--;
@@ -28,9 +29,9 @@ function timeStart() {
     }, 1000);
 };
 function start() {
+    timeStart();
     startQuestion();
     startScore();
-    timeStart();
 }
 // Question functions
 function correct() {
