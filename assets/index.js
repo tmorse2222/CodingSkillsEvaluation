@@ -92,12 +92,17 @@ function q10C() {
     correct();
 };
 function end() {
+    var name = prompt(`Please enter your name:`);
+    var list = document.createElement(`li`);
+    list.innerHTML = `${name} - ${currentScore}`;
+    document.getElementById(`highScores`).appendChild(list);
     document.getElementById(`q10`).style.display = `none`;
     document.getElementById(`startContain`).style.display = `flex`;
 };
 function endC() {
-    end();
     correct();
+    end();
+   
 };
 // Declared Functions
 
