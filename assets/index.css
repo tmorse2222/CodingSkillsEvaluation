@@ -23,11 +23,12 @@ h1 {
     padding-top: var(--scrnBrdr);
     padding-bottom: var(--scrnBrdr);
 }
-.head a {
-    text-decoration: none;
+.head button {
+    border: none;
     font-size: var(--fontSize);
     display: inline;
     color: black;
+    background-color: var(--mainBG);
 }
 .head p {
     font-size: var(--fontSize);
@@ -69,7 +70,7 @@ h1 {
 }
 
 /* Style used to hide questions */
-#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10 {
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #highScores {
     display: none;
 }
 
@@ -84,5 +85,27 @@ h1 {
     padding: var(--scrnBrdr);
 }
 #playerScore {
+    font-size: var(--questionSize);
+}
+
+.highScores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#highScores h2 {
+    font-size: var(--questionSize);
+    padding: var(--questionSize) var(--scrnBrdr) var(--scrnBrdr) var(--scrnBrdr);
+}
+#highScores ul {
+    padding-bottom: var(--questionSize);
+}
+#highScores li {
+    display: inline;
+    font-size: var(--fontSize);
+    padding: var(--scrnBrdr);
+}
+#scoreHide {
     font-size: var(--questionSize);
 }

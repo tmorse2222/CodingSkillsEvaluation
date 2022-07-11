@@ -3,6 +3,12 @@ var currentScore = 0;
 // Created Functions
 
 // Start functions
+function scoreButton() {
+    document.getElementById(`highScores`).style.display = `flex`;
+};
+function scoreHide() {
+    document.getElementById(`highScores`).style.display = `none`;
+};
 function startQuestion() {
     document.getElementById(`startContain`).style.display = `none`;
     document.getElementById(`q1`).style.display = `flex`;
@@ -106,6 +112,8 @@ function endC() {
    
 };
 // Declared Functions
+document.getElementById(`scoreButton`).onclick = scoreButton;
+document.getElementById(`scoreHide`).onclick = scoreHide;
 
 document.getElementById(`startButton`).onclick = start;
 
