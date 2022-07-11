@@ -29,6 +29,11 @@ h1 {
     display: inline;
     color: black;
     background-color: var(--mainBG);
+    padding: var(--scrnBrdr);
+}
+.head button:hover {
+    border: .2rem dashed black;
+    cursor: pointer;
 }
 .head p {
     font-size: var(--fontSize);
@@ -60,6 +65,7 @@ h1 {
 }
 .qa li button:hover {
     border: .2rem dashed var(--mainBG);
+    cursor: pointer;
 }
 .qa li button:focus {
     outline: none;
@@ -101,6 +107,9 @@ h1 {
 #scoreHide {
     font-size: var(--questionSize);
 }
+#scoreHide:hover {
+    cursor: pointer;
+}
 #correctAlert {
     display: flex;
     justify-content: center;
@@ -132,4 +141,7 @@ h1 {
     font-size: var(--fontSize);
     padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
     text-align: center;
+}
+#startButton:hover {
+    cursor: pointer;
 }
