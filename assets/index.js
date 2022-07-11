@@ -1,13 +1,8 @@
 // Global varriables
 var currentScore = 0;
 var time = 60;
-var timer = setInterval(function(){
-    document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
-    time--;
-    if (time < 0) {
-        clearInterval(timer);
-    }
-}, 1000);
+var timer = null;
+var timeStop = clearInterval(timer);
 // Created Functions
 
 // Start functions
@@ -27,7 +22,13 @@ function startScore() {
 };
 function timeStart() {
     time = 60;
-    timer;
+    timer = setInterval(function(){
+        document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
+        time--;
+        if (time < 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
 };
 function start() {
     timeStart();
