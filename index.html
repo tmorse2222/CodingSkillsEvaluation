@@ -9,23 +9,30 @@
     <link rel="stylesheet" href="assets/index.css">
 </head>
 <body>
+    <!-- Nav Bar at top of screen -->
     <header class="head">
+        <!-- Score List button -->
         <button id="scoreButton">Player Scores</button>
         <h1>Coding Skills Evaluation</h1>
+        <!-- Timer for evaluation -->
         <p id="timer">Seconds remaining: 60</p>
     </header>
 
+    <!-- Score list -->
     <section class="highScores" id="highScores">
         <ul id="playerList"><h2>Player Scores</h2>
         </ul>
+        <!-- Button to hide score list -->
         <button id="scoreHide">Click to hide scores</button>
     </section>
 
+    <!-- Container for instructions and start button -->
     <article class="qa" id="startContain">
         <p>Welcome! This evaluation will test some basic fundamentals of coding in a timed environment. You will be given 60 seconds to complete 10 questions; correct answers will give you 5 points, while incorrect responses will drop 10 seconds off of your remaining time. Any remaining time at the end of the evaluation will be added to your score!</p>
         <button id="startButton">Start Evaluation!</button>
     </article>
 
+    <!-- Question 1 -->
     <article class= "qa" id="q1">
         <ul><h2>Q1: What answer best describes Javascript?</h2>
             <li><button id="i11">An extension of HTML that allows an application to process advanced commands</button></li>
@@ -35,6 +42,7 @@
     </ul>
     </article>
 
+    <!-- Question 2 -->
     <article class= "qa" id="q2">
         <ul><h2>Q2: What is a Data Structure?</h2>
             <li><button id="c2">A storage format that defines the way data is organized and manipulated</buttton></li>
@@ -44,6 +52,7 @@
     </ul>
     </article>
 
+    <!-- Question 3 -->
     <article class= "qa" id="q3">
         <ul><h2>Q3: What is an Array?</h2>
             <li><button id="i31">A group of functions acting on a specific element</buttton></li>
@@ -53,6 +62,7 @@
     </ul>
     </article>
 
+    <!-- Question 4 -->
     <article class= "qa" id="q4">
         <ul><h2>Q4: What is the difference between an Element and a Tag in HTML?</h2>
             <li><button id="i41">Style properties are displayed on an element, not a tag</buttton></li>
@@ -62,6 +72,7 @@
     </ul>
     </article>
 
+    <!-- Question 5 -->
     <article class= "qa" id="q5">
         <ul><h2>Q5: What is a void element in HTML?</h2>
             <li><button id="i51">An element that is not displayed on the application</buttton></li>
@@ -71,6 +82,7 @@
     </ul>
     </article>
 
+    <!-- Question 6 -->
     <article class= "qa" id="q6">
         <ul><h2>Q6: What is hoisting and how is it used?</h2>
             <li><button id="c6">A proccess in JavaScript of calling a variable or function declaration from lower in the documents structure</buttton></li>
@@ -80,6 +92,7 @@
     </ul>
     </article>
 
+    <!-- Question 7 -->
     <article class= "qa" id="q7">
         <ul><h2>Q7: Where is the best place to link a JavaScript file?</h2>
             <li><button id="c7">At the end of the document, just before [/body]</buttton></li>
@@ -89,6 +102,7 @@
     </ul>
     </article>
 
+    <!-- Question 8 -->
     <article class= "qa" id="q8">
         <ul><h2>Q8: What is a Boolean?</h2>
             <li><button id="i81">Any number that is not positive</buttton></li>
@@ -98,6 +112,7 @@
     </ul>
     </article>
 
+    <!-- Question 9 -->
     <article class= "qa" id="q9">
         <ul><h2>Q9: What does the following line of code most likely represent?<br>(let i = 0; i < var.length; i++)</h2>
             <li><button id="i91">A method used to generate a random number from an array</buttton></li>
@@ -107,6 +122,7 @@
     </ul>
     </article>
 
+    <!-- Question 10 -->
     <article class= "qa" id="q10">
         <ul><h2>Q10: What is Flexbox?</h2>
             <li><button id="i101">A method in CSS used to change multiple styles of an element</buttton></li>
@@ -115,10 +131,16 @@
             <li><button id="c10">A CSS layout model that allows elements to respond to screen size</buttton></li>
     </ul>
     </article>
+
+    <!-- Player score in bottom right corner -->
 <section class="playerScore"><h2 id="playerScore">Your Score:</h2>
 </section>
+
+<!-- Alerts for correct and incorrect responses -->
 <h3 id="correctAlert">You answered the last question correctly! +5 points!</h3>
 <h3 id="incorrectAlert">You answered the last question incorrectly! - 10 seconds!</h3>
+
+<!-- Link to JS -->
     <script type="text/javascript" src="assets/index.js"></script>
 </body>
 </html>
