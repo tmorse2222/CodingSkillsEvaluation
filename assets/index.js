@@ -1,5 +1,6 @@
 // Global varriables
 var currentScore = 0;
+var time = 60;
 // Created Functions
 
 // Start functions
@@ -17,9 +18,19 @@ function startQuestion() {
 function startScore() {
     document.getElementById(`playerScore`).innerHTML = `Your Score: ${currentScore}`;
 };
+function timeStart() {
+    var timer = setInterval(function(){
+        document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
+        time--;
+        if (time < 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
+};
 function start() {
     startQuestion();
     startScore();
+    timeStart();
 }
 // Question functions
 function correct() {
