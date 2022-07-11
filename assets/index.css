@@ -69,11 +69,6 @@ h1 {
     border: .2rem dashed var(--mainBG);
 }
 
-/* Style used to hide questions */
-#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #highScores {
-    display: none;
-}
-
 /* Style for score */
 
 .playerScore {
@@ -108,4 +103,28 @@ h1 {
 }
 #scoreHide {
     font-size: var(--questionSize);
+}
+#correctAlert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
+    font-size: var(--questionSize);
+    font-style: italic;
+    background-color: rgb(4, 202, 4);
+    opacity: 65%;
+}
+#incorrectAlert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
+    font-size: var(--questionSize);
+    font-style: italic;
+    background-color: rgb(224, 4, 4);
+    opacity: 65%;
+}
+/* Style used to hide questions */
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #highScores, #correctAlert, #incorrectAlert {
+    display: none;
 }

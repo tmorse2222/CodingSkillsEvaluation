@@ -38,9 +38,13 @@ function start() {
 function correct() {
     currentScore += 5;
     startScore();
+    document.getElementById(`correctAlert`).style.display = `flex`;
+    document.getElementById(`incorrectAlert`).style.display = `none`;
 };
 function incorrect() {
     time -= 5;
+    document.getElementById(`incorrectAlert`).style.display = `flex`;
+    document.getElementById(`correctAlert`).style.display = `none`;
 }
 function timesUp() {
     q2();
