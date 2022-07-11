@@ -23,6 +23,7 @@ h1 {
     padding-top: var(--scrnBrdr);
     padding-bottom: var(--scrnBrdr);
 }
+/* Style for score list button */
 .head button {
     border: none;
     font-size: var(--fontSize);
@@ -35,13 +36,25 @@ h1 {
     border: .2rem dashed black;
     cursor: pointer;
 }
+
+/* Style for timer */
 .head p {
     font-size: var(--fontSize);
     display: inline;
 }
 
 /* Style for Start Button, Questions, and Answers */
-
+#startButton:hover {
+    cursor: pointer;
+}
+#startContain {
+    flex-direction: column;
+}
+#startContain p {
+    font-size: var(--fontSize);
+    padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
+    text-align: center;
+}
 .qa {
     font-size: var(--questionSize);
     display: flex;
@@ -86,6 +99,7 @@ h1 {
     font-size: var(--questionSize);
 }
 
+/* Styles for high score list */
 .highScores {
     display: flex;
     flex-direction: column;
@@ -110,6 +124,7 @@ h1 {
 #scoreHide:hover {
     cursor: pointer;
 }
+/* Style for correct and incorrect Alerts */
 #correctAlert {
     display: flex;
     justify-content: center;
@@ -133,15 +148,4 @@ h1 {
 /* Style used to hide questions */
 #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #highScores, #correctAlert, #incorrectAlert {
     display: none;
-}
-#startContain {
-    flex-direction: column;
-}
-#startContain p {
-    font-size: var(--fontSize);
-    padding: var(--questionSize) var(--scrnBrdr) var(--questionSize) var(--scrnBrdr);
-    text-align: center;
-}
-#startButton:hover {
-    cursor: pointer;
 }
