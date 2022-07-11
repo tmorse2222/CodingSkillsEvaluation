@@ -6,6 +6,7 @@ var currentScore = 0;
 function startQuestion() {
     document.getElementById(`startContain`).style.display = `none`;
     document.getElementById(`q1`).style.display = `flex`;
+    currentScore = 0;
 };
 function startScore() {
     document.getElementById(`playerScore`).innerHTML = `Your Score: ${currentScore}`;
