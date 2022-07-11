@@ -24,7 +24,7 @@ function timeStart() {
     timer = setInterval(function(){
         document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
         time--;
-        if (time < 0) {
+        if (time < .5) {
             timesUp();
         }
     }, 1000);
@@ -42,7 +42,7 @@ function correct() {
     document.getElementById(`incorrectAlert`).style.display = `none`;
 };
 function incorrect() {
-    time -= 5;
+    time -= 10;
     document.getElementById(`incorrectAlert`).style.display = `flex`;
     document.getElementById(`correctAlert`).style.display = `none`;
 }
@@ -176,6 +176,8 @@ function end() {
     document.getElementById(`q10`).style.display = `none`;
     document.getElementById(`startContain`).style.display = `flex`;
     scoreButton();
+    document.getElementById(correctAlert).style.display = `none`;
+    document.getElementById(incorrectAlert).style.display = `none`;
 };
 function endC() {
     correct();
