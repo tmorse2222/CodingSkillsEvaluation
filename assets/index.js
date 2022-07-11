@@ -2,7 +2,6 @@
 var currentScore = 0;
 var time = 60;
 var timer = null;
-var timeStop = clearInterval(timer);
 // Created Functions
 
 // Start functions
@@ -26,7 +25,7 @@ function timeStart() {
         document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
         time--;
         if (time < 0) {
-            clearInterval(timer);
+            timesUp();
         }
     }, 1000);
 };
@@ -42,6 +41,18 @@ function correct() {
 };
 function incorrect() {
     time -= 5;
+}
+function timesUp() {
+    q2();
+    q3();
+    q4();
+    q5();
+    q6();
+    q7();
+    q8();
+    q9();
+    q10();
+    end();
 }
 function q2() {
     document.getElementById(`q1`).style.display = `none`;
@@ -152,10 +163,10 @@ function q10I() {
     incorrect();
 };
 function end() {
-    var name = prompt(`Please enter your name:`);
-    var list = document.createElement(`li`);
     clearInterval(timer);
     currentScore += time;
+    var name = prompt(`Please enter your name:`);
+    var list = document.createElement(`li`);
     list.innerHTML = `${name} - ${currentScore}`;
     document.getElementById(`playerList`).appendChild(list);
     document.getElementById(`q10`).style.display = `none`;
