@@ -22,5 +22,5 @@ WHEN the game is over<br>
 THEN I can save my initials and score<br>
 <br>
 This challenge features a coding "game" that was built from scratch. The main feature of the challenge is the use of JavaScript to impact both CSS and HTML to achieve and exceed acceptance criteria.<br>
-<img src="assets/images/screenshot.jpg" alt="A Screenshot of the deployed app"><br>
+<img src="assets/images/screenshot.png" alt="A Screenshot of the deployed app"><br>
 A link to the deployed application can be found <a href="https://tmorse2222.github.io/CodingSkillsEvaluation/" target="blank">here</a>
