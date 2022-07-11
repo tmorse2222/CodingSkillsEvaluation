@@ -1,6 +1,13 @@
 // Global varriables
 var currentScore = 0;
 var time = 60;
+var timer = setInterval(function(){
+    document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
+    time--;
+    if (time < 0) {
+        clearInterval(timer);
+    }
+}, 1000);
 // Created Functions
 
 // Start functions
@@ -20,13 +27,7 @@ function startScore() {
 };
 function timeStart() {
     time = 60;
-    var timer = setInterval(function(){
-        document.getElementById(`timer`).innerHTML = `Seconds remaining: ${time}`;
-        time--;
-        if (time < 0) {
-            clearInterval(timer);
-        }
-    }, 1000);
+    timer;
 };
 function start() {
     timeStart();
@@ -152,6 +153,8 @@ function q10I() {
 function end() {
     var name = prompt(`Please enter your name:`);
     var list = document.createElement(`li`);
+    clearInterval(timer);
+    currentScore += time;
     list.innerHTML = `${name} - ${currentScore}`;
     document.getElementById(`playerList`).appendChild(list);
     document.getElementById(`q10`).style.display = `none`;
